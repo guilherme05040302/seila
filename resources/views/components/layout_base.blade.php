@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
     <title>{{$tittle ?? 'MarketShop'}}</title>
 </head>
-<body>
+<body data-themes="light" class="bg-gray-50 min-h-screen">
     {{ $slot }} 
 </body>
 </html>

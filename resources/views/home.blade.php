@@ -34,4 +34,23 @@
   </div>
 </div>
 
+  <div class="bg-white rounded-md shadow-md m-6 p-6">
+    <div class="text-black text-lg font-bold">
+      Ofertas do dia
+    </div>
+    <div class="grid grid-cols-4 gap-3">
+      @for ($i = 0; $i < 75; $i++)
+      <div class="card  bg-white shadow-xl">
+  <figure><img src="https://picsum.photos/400?random{{$i}}" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title">{{fake()->name()}}</h2>
+    <p>{{fake()->realText(100, 1)}}</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Compre já</button>
+    </div>
+  </div>
+</div>
+      @endfor
+    </div>
+</div>
 </x-layout_base>
